@@ -1,5 +1,6 @@
 .body {
     background: #F5F5F5;
+    margin: 0px;
 }
 
 .cabecalhoPrincipal {
@@ -52,16 +53,18 @@
     font-family: sans-serif;
     font-size: 80px;
     display: inline-block;
+    /*display: flex;
+    flex-wrap: wrap;*/
     vertical-align: top;
     width: 50%;
     margin-right: 150px;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 .apresentacao {
     display: grid;
     align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 5px;
     height: 118px;
     width: 509px;
@@ -109,12 +112,47 @@
 
 
 .marley-photo{
-    margin-top: 100px;
-    margin-left: 120px;
+    margin-top: 65px;
+    margin-left: 100px;
     width:500px;
     height:400px;
 
 }
+
+#section {
+	border-bottom: 5px  black;
+	border-bottom-style: dashed;
+    margin-top: 680px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "destaque . ."
+        "destaque . .";
+    
+}
+
+.skill-destaque {
+    grid-area: destaque;
+    height: 400px;
+}
+
+.skills-items {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F9C73E;
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    
+}
+
+
+
+
 
 
 
